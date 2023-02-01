@@ -64,6 +64,7 @@ body {
 .image-gallery > li {
   list-style-type: none; 
   flex-basis: 21vw;
+  height: 21vw;
   margin: 1vw;
 
 }
@@ -146,16 +147,25 @@ span{
   @media screen and (max-width: 1200px) {
     .image-gallery > li {
       flex-basis: 42vw;
+      height: 42vw;
     }
     span{
       color:#fbf8fb;
       padding: 1vw;
       font-size: 6vw;
     }
+  }
 
-
-
-
+  @media screen and (max-width: 600px) {
+    .image-gallery > li {
+      flex-basis: 85vw;
+      height: 70vw;
+    }
+    span{
+      color:#fbf8fb;
+      padding: 1vw;
+      font-size: 6vw;
+    }
   }
 
  
