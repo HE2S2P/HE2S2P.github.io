@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2vh;
-  font-size:calc(10px + 1vw);
+  font-size:calc(7px + 1vw);
 }
 
 
