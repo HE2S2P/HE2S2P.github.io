@@ -192,7 +192,8 @@ footer{
     
     ::-webkit-scrollbar-thumb{
       background-color: #fbf8fbF3;
-      border: 2px solid #232323 ;
+      border: 3px solid #232323 ;
+      border-radius: 60px;
     }
     
     .cursor{
