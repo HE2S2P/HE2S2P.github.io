@@ -102,7 +102,7 @@ body {
   
   top: 0;
   left: 0;
-  opacity: 1;
+  opacity: 0;
   /* center overlay text */
   transition: all 250ms ease-in-out;
   display: flex;
