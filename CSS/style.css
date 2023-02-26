@@ -16,7 +16,7 @@ body {
 
 .top1{
   margin-top: 4vW;
-  padding: 0vw calc(5px + 3vw);
+  padding: 0vw 3vw;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
 }
 
 .top{
-  padding: 0vw calc(5px + 3vw);
+  padding: 0vw  3vw;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -55,18 +55,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*gap:1vw;*/
   width: 94vw;
   background-color: #fbf8fb;
+  gap:1vw
 }
 
 
 
 .image-gallery > li {
   list-style-type: none; 
-  flex-basis: 21vw;
+  flex-basis: 22.5vw;
   height: 15vw;
-  margin: 1vw;
 
 }
 
@@ -81,7 +80,7 @@ body {
 
 .image-gallery::after {
   content: "";
-  flex-basis: 22vw;
+  flex-basis: 23.5vw;
 }
 
 .image-gallery > li {
@@ -145,8 +144,8 @@ span{
 
   @media screen and (max-width: 1200px) {
     .image-gallery > li {
-      flex-basis: 42vw;
-      height: 31vw;
+      flex-basis: 45.5vw;
+      height: 34vw;
     }
     span{
       padding: 2vw;
@@ -258,7 +257,7 @@ footer{
     border-top: 2px solid #232323;
     display: flex;
     align-items: center;
-    padding: 2vW 2vw;
+    padding:  0vW 3vW;
     justify-content: space-between;
     
     
