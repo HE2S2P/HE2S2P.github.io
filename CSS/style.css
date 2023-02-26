@@ -142,27 +142,7 @@ span{
     box-sizing: border-box;
   }
 
-  @media screen and (max-width: 1200px) {
-    .image-gallery > li {
-      flex-basis: 45.5vw;
-      height: 34vw;
-    }
-    span{
-      padding: 2vw;
-      font-size: 6vw;
-    }
-  }
 
-  @media screen and (max-width: 600px) {
-    .image-gallery > li {
-      flex-basis: 85vw;
-      height: 63vw;
-    }
-    span{
-      padding: 4vw;
-      font-size: 12vw;
-    }
-  }
 
 
   
@@ -175,8 +155,8 @@ span{
   }
 
   .video2 {
-    width: calc(160px + 32vw);
-    height: calc(120px + 24vw);
+    width: 32vw;
+    height: 24vw;
   
   }
 
@@ -186,23 +166,7 @@ span{
 }
 
 
-    /* Portrait */
-  @media screen and (orientation:portrait) {
-    .game{
-      width: 70vW;
-      height: 120vW;
-      
-      }
-    
-  }
-  /* Landscape */
-  @media screen and (orientation:landscape) {
-    .game{
-      width: 45vH;
-      height: 80vH;
-      }
-    
-  }
+
 
 
 
@@ -240,15 +204,7 @@ span{
 
 
 
-  @media screen and (max-width: 1200px) {
-    .flex-text {
-      flex-basis: 100vW;
-    }
-    .flex-img {
-      flex-basis: 100vW;
-    }
 
-  }
   
 footer{
     margin-top: 2vH;
@@ -264,10 +220,12 @@ footer{
   }
 
   .butt {
+    display: flex;
+    justify-content: center;
     width: 70px;
-    height: 70px;
-    font-size: 30px ;
-    padding: 10px 19px;
+    height:  70px;
+    line-height: 62px ;
+    font-size: 39px;
     border-radius: 1000px;
     margin: 1px 1px;
     background-color: #fbf8fb;
@@ -277,16 +235,25 @@ footer{
     transition: all 250ms ease-in-out;
   }
 
+  .butt:hover {
+    background-color: #232323;
+    color: #fbf8fb ;
+    border: 2px solid #fbf8fb;
+
+  }
+
   .butt2{
     width: 70px;
-    height: 70px;
-    font-size: 30px ;
+    height:  70px;
+    letter-spacing: 1PX;
+    line-height: 47px ;
+    font-size: 39px;
     position: fixed;
     top: 0;
     display: flex;
-    padding: 10px 19px;
+    padding: 10px 10px;
     border-radius: 1000px;
-    margin: 1VW 1.5VW;
+    margin: 1VW 3VW;
     background-color: #fbf8fb;
     color: #232323 ;
     border: 2px solid #232323;
@@ -294,16 +261,12 @@ footer{
     transition: all 250ms ease-in-out;
   }
 
-  @media screen and (max-width: 600px) {
-    .butt2{
-      width: 55px;
-      height: 55px;
-      font-size: 20px ;
-
-    }
+  .butt2:hover {
+    background-color: #232323;
+    color: #fbf8fb ;
+    border: 2px solid #fbf8fb;
 
   }
-  
   
   ::-webkit-scrollbar{
       width: 30px;
@@ -328,3 +291,79 @@ footer{
     html {
       scroll-behavior: smooth;
     }
+
+
+    @media screen and (max-width: 1200px) {
+      .image-gallery > li {
+        flex-basis: 45.5vw;
+        height: 34vw;
+      }
+      span{
+        padding: 2vw;
+        font-size: 6vw;
+      }
+    }
+
+
+  
+    @media screen and (max-width: 600px) {
+      .image-gallery > li {
+        flex-basis: 85vw;
+        height: 63vw;
+      }
+      span{
+        padding: 4vw;
+        font-size: 12vw;
+      }
+
+      .topage{
+        height:60px;
+      }
+      .butt2{
+        width: 50px;
+        height: 50px;
+        line-height: 30px ;
+        font-size: 28px;
+        margin: 5px;
+  
+      }
+
+      .butt{
+        width: 50px;
+        height: 50px;
+        line-height: 48px ;
+        font-size: 28px;
+  
+      }
+
+      footer{
+        padding:  0vW 5px;
+      }
+
+      .video2 {
+        width: 80vW;
+        height: 60vW;
+      
+      }
+
+    }
+
+
+      /* Portrait */
+      @media screen and (orientation:portrait) {
+        .game{
+          width: 70vW;
+          height: 120vW;
+          
+          }
+        
+        
+      }
+      /* Landscape */
+      @media screen and (orientation:landscape) {
+        .game{
+          width: 45vH;
+          height: 80vH;
+          }
+        
+      }
