@@ -1,5 +1,5 @@
 var bg_color_img_box = 'rgba(0,0,0,0.9)'
-var allow_hide_scroll_img_box = 'yes'
+var allow_hide_scroll_img_box = 'no'
 var use_fade_inout_img_box = 'yes'
 var speed_img_box = 0.08
 var z_index_dv_img_box = 999
