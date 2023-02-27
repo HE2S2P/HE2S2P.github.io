@@ -45,7 +45,6 @@ body {
   border-radius: 50px;
   margin: 1px 1px;
   background-color: #fbf8fb;
-  color: #232323 ;
   border: 2px solid #232323;
 }
 
@@ -142,10 +141,6 @@ span{
     box-sizing: border-box;
   }
 
-
-
-
-  
   .text2 {
 
     width: calc(160px + 32vw);
@@ -165,8 +160,28 @@ span{
     border-style:none;
 }
 
+.pdf{
+  display: flex;
+  justify-content: start;
+  font-size:1.5vw;
+  padding: 0vw  3vw;
+  margin-bottom: 2vW;
+  cursor: pointer;
+}
 
+.rounded2{
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin: 1px 1px;
+  background-color: #fbf8fb;
+  border: 2px solid #232323;
+}
 
+.rounded2:hover{
+  background-color: #232323;
+  color: #fbf8fb ;
+  border: 2px solid #fbf8fb;
+}
 
 
 
@@ -207,7 +222,7 @@ span{
 
   
 footer{
-    margin-top: 2vH;
+    margin-top: 2vW;
     height: calc(60px + 2vw);
     border-bottom: 2px solid #fbf8fb;
     border-top: 2px solid #232323;
@@ -302,6 +317,9 @@ footer{
         padding: 2vw;
         font-size: 6vw;
       }
+      .pdf{
+        font-size:20px;
+      }
     }
 
 
@@ -346,6 +364,9 @@ footer{
       
       }
 
+      .pdf{
+        font-size:20px;
+      }
     }
 
 
