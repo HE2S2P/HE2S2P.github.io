@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none; 
     font-family: 'CabinetGrotesk-Black';
+    
 }
 
 body {
@@ -150,9 +151,10 @@ span{
   }
 
   .video2 {
-    width: 32vw;
-    height: 24vw;
-  
+    max-width:1000px;
+    max-height: 750px;
+    width: 80vW;
+    height: 60vW;
   }
 
   iframe {
@@ -308,6 +310,10 @@ footer{
     }
 
 
+    .topage{
+      height:50px;
+    }
+
     @media screen and (max-width: 1200px) {
       .image-gallery > li {
         flex-basis: 45.5vw;
@@ -319,6 +325,10 @@ footer{
       }
       .pdf{
         font-size:20px;
+      }
+      .video2 {
+
+      
       }
     }
 
@@ -334,9 +344,7 @@ footer{
         font-size: 12vw;
       }
 
-      .topage{
-        height:60px;
-      }
+
       .butt2{
         width: 50px;
         height: 50px;
@@ -358,11 +366,7 @@ footer{
         padding:  0vW 5px;
       }
 
-      .video2 {
-        width: 80vW;
-        height: 60vW;
       
-      }
 
       .pdf{
         font-size:20px;
