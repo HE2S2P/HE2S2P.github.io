@@ -61,29 +61,11 @@ html, body, canvas {
 	content: " • ";
 }
 
-
-@font-face {
-	font-family: 'valken__';
-	src: url('fonts/valken__.ttf') format('truetype');
+/* screen reader text */
+.c3-screen-reader-text {
+	position: absolute;
+	width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
 }
-
-@font-face {
-	font-family: 'argentumsans-extrabolditalic';
-	src: url('fonts/argentumsans-extrabolditalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'argentumsans-black';
-	src: url('fonts/argentumsans-black.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'nunito.black';
-	src: url('fonts/nunito.black.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'nunito.black-italic';
-	src: url('fonts/nunito.black-italic.ttf') format('truetype');
-}
-
