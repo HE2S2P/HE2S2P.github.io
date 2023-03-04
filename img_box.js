@@ -1,5 +1,5 @@
 var bg_color_img_box = 'rgba(0,0,0,0.9)'
-var allow_hide_scroll_img_box = 'no'
+var allow_hide_scroll_img_box = 'yes'
 var use_fade_inout_img_box = 'yes'
 var speed_img_box = 0.08
 var z_index_dv_img_box = 999
@@ -10,6 +10,7 @@ window.onload = function() {
     crtdv_img_box.id = 'img_box'
     document.getElementsByTagName('body')[0].appendChild(crtdv_img_box)
     idpopup_img_box = document.getElementById("img_box")
+    idpopup_img_box.classList.add("img_box")
     idpopup_img_box.style.top = 0
     idpopup_img_box.style.left = 0
     idpopup_img_box.style.opacity = 0
@@ -23,7 +24,7 @@ window.onload = function() {
     idpopup_img_box.style.backgroundColor = bg_color_img_box
 }
 
-function img_box(self) {
+function img_box(self, label) {
     var namepic_img_box = typeof self === 'string' ? self : self.src
     vopa_img_box = 0
     var hwin_img_box = window.innerHeight
@@ -34,7 +35,7 @@ function img_box(self) {
     img_img_box.onload = function() {
         himg_img_box = img_img_box.height
         wimg_img_box = img_img_box.width
-        idpopup_img_box.innerHTML = '<img src=' + namepic_img_box + '>'
+        idpopup_img_box.innerHTML = `<img src='${namepic_img_box}' class="popup-image"><br><span class="popup-image-label">${label}</span>`
 
         if (wimg_img_box > wwin_img_box) {
             idpopup_img_box.getElementsByTagName('img')[0].style.width = '90%'
