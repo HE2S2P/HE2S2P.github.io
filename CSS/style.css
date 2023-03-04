@@ -152,7 +152,7 @@ span{
 }
 
 .popup-image-label {
-    font-size: calc(30px+1VW);
+    font-size: calc(16px + 0.7vw);
     color: #fbf8fb;
     font-family: 'CabinetGrotesk-Black';
 }
@@ -177,21 +177,25 @@ span{
     border-style:none;
 }
 
-.pdf{
+.LinkBox{
   display: flex;
   justify-content: start;
   font-size:1.5vw;
   padding: 0vw  3vw;
-  margin-bottom: 4vW;
-  cursor: pointer;
+  
 }
 
+
+
+
 .rounded2{
+  cursor: pointer;
   padding: 10px 25px;
   border-radius: 50px;
   margin: 1px 1px;
   background-color: #fbf8fb;
   border: 2px solid #232323;
+  transition: all 250ms ease-in-out;
 }
 
 .rounded2:hover{
@@ -340,13 +344,10 @@ footer{
         padding: 2vw;
         font-size: 5vw;
       }
-      .pdf{
-        font-size:20px;
-      }
-      .video2 {
 
+      .LinkBox{
+        font-size:20px;}
       
-      }
     }
 
 
@@ -385,7 +386,7 @@ footer{
 
       
 
-      .pdf{
+      .LinkBox{
         font-size:20px;
       }
     }
@@ -401,9 +402,10 @@ footer{
         
         
       }
-      /* Landscape */
-      @media screen and (orientation:landscape) {
-        .game{
+      
+/* Landscape */
+@media screen and (orientation:landscape) {
+      .game{
           width: 45vH;
           height: 80vH;
           }
