@@ -37,13 +37,6 @@ function img_box(self, label) {
         wimg_img_box = img_img_box.width
         idpopup_img_box.innerHTML = `<img src='${namepic_img_box}' class="popup-image"><br><span class="popup-image-label">${label}</span>`
 
-        if (wimg_img_box > wwin_img_box) {
-            idpopup_img_box.getElementsByTagName('img')[0].style.width = '90%'
-        }
-        else if (himg_img_box > hwin_img_box) {
-            idpopup_img_box.getElementsByTagName('img')[0].style.height = '90%'
-            himg_img_box = hwin_img_box * 90 / 100
-        }
 
         if (himg_img_box < hwin_img_box) {
             padtop_img_box = (hwin_img_box / 2) - (himg_img_box / 2)

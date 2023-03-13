@@ -16,6 +16,8 @@ body {
 
 
 
+
+
 h1{
   margin-top: 4vW;
   text-align: center;
@@ -239,6 +241,12 @@ span{
     cursor: zoom-in;
   }
 
+  .popup-image { 
+    max-height: 90vh;
+    width: auto;
+    padding-top:5vH;
+}
+
 
 
 
@@ -398,6 +406,11 @@ footer{
           height: 120vW;
           
           }
+          .popup-image { 
+            max-width: 90vW;
+            height: auto;
+            padding-top:5vW;
+        }
         
         
       }
