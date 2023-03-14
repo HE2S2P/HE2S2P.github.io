@@ -155,13 +155,14 @@ span{
 .popup-image-label {
     font-size: calc(16px + 0.7vw);
     color: #fbf8fb;
-    font-family: 'CabinetGrotesk-Black';
+    font-family: 'CabinetGrotesk-Bold';
 }
 
   .text2 {
 
     width: calc(160px + 32vw);
-    text-align: center;
+    font-family: 'CabinetGrotesk-Bold';
+    text-align: justify;
     font-size: calc(13px + 0.5vw);
     margin-top: 2vw;
   }
@@ -180,9 +181,11 @@ span{
 
 .LinkBox{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   font-size:1.5vw;
   padding: 0vw  3vw;
+  padding-top: 1vW;
+  padding-bottom: 2vW;
   
 }
 
@@ -197,6 +200,7 @@ span{
   background-color: #fbf8fb;
   border: 2px solid #232323;
   transition: all 250ms ease-in-out;
+  font-family: 'CabinetGrotesk-Extrabold';
 }
 
 .rounded2:hover{
