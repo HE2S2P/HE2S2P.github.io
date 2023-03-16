@@ -167,6 +167,12 @@ span{
     margin-top: 2vw;
   }
 
+  .credit {
+
+    font-family: 'CabinetGrotesk-Extrabold';
+    font-size: calc(13px + 0.5vw);
+  }
+
   .video2 {
     max-width:1000px;
     max-height: 750px;
